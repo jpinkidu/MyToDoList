@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               tools:context=".MainActivity"
+                android:background="#fff"
+                android:id="@+id/LayoutMain">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newItem"
+        android:hint="Enter a task"
+        android:textColor="#7b1fa2"
+        android:textSize="24sp"
+        android:textColorHint="#7b1fa2"
+        android:singleLine="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addButton"
+        android:background="#7b1fa2"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:layout_below="@+id/newItem"
+        android:onClick="addNewItemToList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewMain"
+        android:layout_below="@+id/addButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
